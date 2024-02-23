@@ -8,9 +8,11 @@
 <body>
     <h1>Welcome to the Protected Page</h1>
     <p>Welcome to successful login into Passport authentication <%= user.username %>!</p>
+
     <% if (success && success.length > 0) { %>
         <p class="success"><%= success %></p>
     <% } %>
+    
     <a href="/auth/logout">Logout</a>
 </body>
 </html>
